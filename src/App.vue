@@ -31,7 +31,7 @@ export default {
     // promises
 
       async fetchBooks(){
-          const res = await fetch('http://localhost:5959/books')
+          const res = await fetch('https://raghu.herokuapp.com/api')
           const data = await res.json()
           console.log( data )
           return data
